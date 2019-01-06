@@ -11,7 +11,7 @@
 */
 
 Route::get('/', function (){
-    return view('welcome');
+    return view('master');
 });
 
 //Quản lý tài khoản
