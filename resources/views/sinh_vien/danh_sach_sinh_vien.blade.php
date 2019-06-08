@@ -19,7 +19,7 @@
                 <select class="form-control ma_nganh">
                     <option value="0">--Chọn ngành--</option>
                     @foreach($danhSachNganh as $nganhHoc)
-                    <option value="{{$nganhHoc->ma_nganh_hoc}}">{{$nganhHoc->ten_nganh_hoc}}</option>
+                        <option value="{{$nganhHoc->ma_nganh_hoc}}">{{$nganhHoc->ten_nganh_hoc}}</option>
                     @endforeach
                 </select>
             </div>
