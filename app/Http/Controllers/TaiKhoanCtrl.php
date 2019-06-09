@@ -20,7 +20,7 @@ class TaiKhoanCtrl extends Controller
     	$user->ten_tai_khoan = $request->txtTaiKhoan;
     	$user->mat_khau = md5($request->txtMatKhau);
         $count = TaiKhoan::login($user);
-        if($count = 0)
+        if($count == 0)
         {
         	TaiKhoan::register($user);
         	return redirect()->route('login')->with('success_register','Đăng ký tài khoản thành công.');
